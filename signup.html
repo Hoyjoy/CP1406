@@ -57,50 +57,67 @@
 			</ul>
 		</div>
 	
-    <div class="main" align= " center">
-        <!-- Main page, 1st thing to see-->
-        <h1>SLAMMERS <br>BEACH VOLLEY BALL</h1>
-
-        <h2> 
-            Join us in our upcoming game!
-        </h2>
-        <button type = "button" class= "signupbtn"><a href="signup.html">Register here!</a></button>
-          
-    </div>
-    
-	<!-- Message Banner -->
-    <div class= "msg">
-		<a href="announcement.html">
-			<i class="fas fa-bullhorn">
-			During August Only, Get 4 drinks @ the price of 3!         
-				<i class="fas fa-bullhorn"></i></i>
-			<br>Click here for more!
-		</a>
-    </div>
 	
-    <div class="row">
-		<div class="column">
-        	<h5>Upcoming Events</h5>
-				<p>
-				New Season Starting on 21st August!
-				</p>
-		</div>
+	<div class="bod">
+		
+		<form action="action_page.php" style="border:1px solid #ccc">
+		  <div class="container">
+			<h4>Sign Up Now!</h4>
+			  
+			<p>Please fill in this form to register for our upcoming event.</p>
+			<hr>
 
-		<div class="column">
-			<h5>Past Events</h5>
-			<p>
-			<a href="pastevents.html">Click Here for Last Season Results</a>
-			</p>
-		</div>
+			<label for="Name"><b>Full Name</b></label>
+<br>
+			  <input type="text" placeholder="Please enter your Name" name="Full Name" required>
+<br>
+			<label for="PhoneNo"><b>Phone Number</b></label>
+<br>
+			 <input type="text" placeholder="Enter your number here" name="phoneNo" required>
+<br>
+			<label for="email"><b>Email</b></label>
+<br>	
+			<input type="text" placeholder="Enter your E-mail address" name="email" required>
+<br>
+			<label for="day"><b>Select your prefered competition day</b></label>
+<br>
+			<select name="day" class="selection" required>
+    			<option value="mon">Monday</option>
+    			<option value="tues">Tuesday</option>
+    			<option value="wed">Wednesday</option>
+    			<option value="thurs">Thursday</option>
+    			<option value="fri">Friday</option>
+    			<option value="sat">Saturday</option>
+  			</select>
+		
+<br>
+			<label for="day"><b>Select your prefered competition time</b></label>
+<br>
+			<select name="time" class="selection" required>
+    			<option value="morning">8am - 11am</option>
+    			<option value="afternoon">12pm - 3pm</option>
+    			<option value="evening">3pm - 6pm</option>
+    			<option value="night">7pm - 10pm</option>
+  			</select>
+		
+<br>			  
+			  
+			  
+			<label>
+			  <input type="checkbox" name="TnP" style="margin-bottom:15px" required> By checking you agree to our <a href="tnc.html">Playing Guidelines</a>.
+			</label>			  
+			  
+			<div class="clearfix">
+				<a href="signup.html">
+			  <button type="button" class="cancelbtn">Cancel</button></a>
+			  <button type="submit" class="signupbtn2">Sign Up</button>
+			</div>
+		  </div>
+		</form>
 
-		<div class="column">
-			<h5>Game Rules</h5>
-			<p>
-			<a href="gamerules.html">Click here for game rules and condition</a>
-			</p>
-		</div>
+	
 	</div>
-	<br>
-
+	
+	
 </body>
 </html>
