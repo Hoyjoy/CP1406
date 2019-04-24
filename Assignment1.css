@@ -13,7 +13,16 @@ body {
 	vertical-align: middle;
 	margin: 0px;
 }
-
+.footer{
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0,140,255,0.91);
+	color: black;
+	height: 100px;
+	
+	
+}
 
 h1{
 	font-size: 50px;
@@ -37,11 +46,11 @@ h4{
 	color: white;	
 }
 h5{
-	font-size: 25px;
+	font-size: 20px;
 	color:black;
-	font-weight: bold;
+	font-weight: normal;
+	margin: 10px;
 }
-
 .menu{
 	display: flex;
 	flex-direction: row;
@@ -57,22 +66,25 @@ h5{
 	position:relative;
 	padding-top: 10px;
 	width: 170px;
+	color: black;
 }
 
 .menuitem:hover {
 	background-color: rgba(0,255,13,1.00);
 	border-bottom: 2px solid White;
+	cursor: pointer;
 }
 
 .menuitem a{
-	color:black;
+	color: black;
+	text-decoration: none;
 }
 
 .topindex{
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
-	background-color: rgba(0,255,243,0.55);
+	background-color: rgba(0,220,255,0.55);
 	
 }
 
@@ -94,9 +106,7 @@ h5{
 }
 .loginsignup:hover{
 	background-color: rgba(0,78,6,1.00);
-}
-.loginsignup a:hover{
-	color:white;
+	color: white;
 }
 
 .main{
@@ -133,10 +143,9 @@ h5{
 .dropdown p:hover{
 	background-color: rgba(0,0,0,0.80);
 	transition-delay: 1ms;
+	color: white;
 }
-.dropdown p a:hover{
-	color:white;
-}
+
 .menuitem:hover .dropdown {
 	display: block;
 	margin-top:0px; 
@@ -162,46 +171,6 @@ h5{
 }
 
 
-.column{
-	float:left;
-	width: 33.33%;
-	text-align:left;
-	padding: 2px 20px 10px 20px;
-	background-color: White;
-	height: 350px;
-}
-.column2{
-	float:left;
-	width: 100%;
-	text-align:left;
-	padding: 2px 20px 10px 20px;
-	background-color: White;
-	height: 450px;
-}
-.cont{
-	height: 10px;
-	width: 250px;
-}
-
-.cont img{
-	width: 100%;
-	height:auto;
-}
-.overlay{
-	position: absolute;
-	display: block;
-	background-color: rgba(255,0,4,0.80);
-	color:white;
-	width: 250px;
-	font-size:20px;
-	text-align:center;
-	transition: 0.5s;
-	font-family: "arial";
-	bottom: -80px;
-}
-.cont:hover .overlay{
-	
-}
 
 ul.first {
   list-style-type: circle;
@@ -302,8 +271,8 @@ button :hover {
 }
 .imgcolumn {
   float: left;
-  width: 25%;
-  padding: 5px;
+  width: auto;
+  padding: 10px;
 }
 .imgcolumn img{
 	width:300px;
@@ -320,4 +289,18 @@ table, th, td {
 }
 table{
 	width: 75%;
+}
+.socialmedia{
+	border:none;
+	background-color: none;
+	font-size: 20px;
+}
+.socialmedia a{
+	color: black;
+}
+.footer a{
+	color: black;
+}
+.tableitem:hover{
+	background-color: red;	
 }
