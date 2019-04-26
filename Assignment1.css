@@ -255,8 +255,9 @@ button :hover {
   padding: 10px;
 }
 .imgcolumn img{
-	width:300px;
-	height: auto;
+	border: 5px black solid;
+	width:auto;
+	height: 200px;
 }
 .imgrow::after {
   content: "";
