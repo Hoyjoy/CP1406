@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 768px){
+
+	body{ 
+		width:100%;
+	}
+	
+	.menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
+		background-color: rgba(255,198,0,1.00);
+		margin: 0px;
+	}
+	.menuitem{
+		display: inline-block;
+		position:relative;
+		padding-top: 10px;
+		color: black;
+		text-align:center;
+		justify-content: space-around;
+	}
+	
+	.menuitem a{
+		color: black;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	.dropdown {
+		display: none;
+		position: absolute;
+		background-color: whitesmoke;
+		text-align: center;
+	}
+
+	.menuitem:hover {
+		background-color: rgba(0,255,13,1.00);
+		border-bottom: 2px solid White;
+		cursor: pointer;
+		width: 100%;
+		margin-left:0;
+	}
+	
+	.dropdown p{
+		margin-top: 10px;
+	}
+
+	.dropdown p:hover{
+		background-color: rgba(0,0,0,0.80);
+		transition-delay: 1ms;
+		color: white;
+	}
+
+	.menuitem:hover .dropdown {
+		display: block;
+		margin-top:0px; 
+	}
+}
